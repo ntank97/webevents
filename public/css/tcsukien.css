@@ -1,0 +1,566 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.main{
+	margin-top: 40px;
+}
+.main-right {
+    float: left;
+}
+
+.main-left {
+    float: left;
+    height: 1100px;
+    border-right: 1px solid #ececec;
+    background: #89da9c;
+}	
+.header{
+	width: 100%;
+	height: 130px;
+	background: lightblue;
+	font-weight: bold;
+}
+.row{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.main-right p{
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+.footer{
+	background: brown;
+	margin-top: 60px;
+}
+.title-box-home{
+	display: block;
+	height: 40px;
+	padding-left: 15px;
+}
+.title-box-home a {
+    display: inline-block;
+    font: 700 18px/35px 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    color: #c92127;
+    text-decoration: none;
+}
+.title-box-home span{
+	background: red;
+    width: 45px;
+    height: 3px;
+    display: block
+}
+.grid-col {
+	margin-top: 25px;
+	float: left;
+	position: relative;
+}
+
+.grid-col img {
+    width: 250px;
+    height: 188px;
+}
+a.layer-hover {
+    width: 239px;
+    height: 176px;
+    position: absolute;
+    z-index: 9;
+    top: 3%;
+    left: 7%;
+    opacity: 0;
+    background: #00000047;
+    transition: 0.5s;
+}
+
+.grid-col img {
+    border: 1px solid #ff4c4c;
+    padding: 5px;
+}
+
+a.grid-col-content {
+    position: absolute;
+    bottom: 9%;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    left: 11%;
+    width: 222px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 19;
+    text-decoration: none;
+    transition: 0.5s;
+    line-height: 21px;
+}
+.grid-col:hover a.layer-hover{
+	opacity: 1;
+
+}
+
+.main-right {
+    float: left;
+}
+
+.main-left {
+    float: left;
+    height: 1100px;
+    border-right: 1px solid #ececec;
+    background: #89da9c;
+}	
+.header{
+	width: 100%;
+	height: 130px;
+	background: lightblue;
+	font-weight: bold;
+}
+.row{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.main-right p{
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+.footer{
+	background: brown;
+	margin-top: 60px;
+}
+.title-box-home{
+	display: block;
+	height: 40px;
+	padding-left: 15px;
+}
+.title-box-home a {
+    display: inline-block;
+    font: 700 18px/35px 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    color: #c92127;
+    text-decoration: none;
+}
+.title-box-home span{
+	background: red;
+    width: 45px;
+    height: 3px;
+    display: block
+}
+.grid-col {
+	margin-top: 25px;
+	float: left;
+	position: relative;
+}
+
+.grid-col img {
+    width: 250px;
+    height: 188px;
+    border: 1px solid #ff4c4c;
+    padding: 5px;
+    box-shadow: 2px 2px #ccc;
+}
+a.layer-hover {
+    width: 239px;
+    height: 176px;
+    position: absolute;
+    z-index: 9;
+    top: 3%;
+    left: 7%;
+    opacity: 0;
+    background: #00000047;
+    transition: 0.5s;
+}
+
+a.grid-col-content {
+    position: absolute;
+    bottom: 9%;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    left: 11%;
+    width: 222px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 19;
+    text-decoration: none;
+    transition: 0.5s;
+    line-height: 21px;
+}
+.grid-col:hover a.layer-hover{
+	opacity: 1;
+
+}
+
+@media screen and (max-width: 1140px){
+	.row{
+		width: 1140px;
+	}
+	.main{
+		width: 1140px;
+	}
+	.grid-col img{
+		width: 250px;
+		height: 188px;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.row{
+		width: 1007px;
+	}
+	.main{
+		width: 1007px;
+	}
+	.grid-col img{
+		width: 214px;
+		height: 160px;
+	}
+	a.layer-hover{
+		width: 202px;
+		height: 148px;
+		left: 9%;
+		top: 4%;
+	}
+	a.grid-col-content{
+		left: 13%;
+		width: 180px;
+	}
+}
+
+@media screen and (max-width: 968px){
+	.row{
+		width: 951px;
+		
+	}
+	.main{
+		width: 951px;
+	}
+	.grid-col img{
+		width: 195px;
+		height: 146px;
+	}
+	a.layer-hover{
+		width: 184px;
+		height: 134px;
+		left: 9%;
+		top: 4%;
+	}
+	a.grid-col-content{
+		left: 10%;
+		width: 180px;
+	}
+}
+
+@media screen and (max-width: 860px){
+	.row{
+		width: 843px;
+	}
+	.main{
+		width: 843px;	
+	}
+	.grid-col img{
+		width: 168px;
+		height: 126px;
+	}
+	a.layer-hover{
+		width: 158px;
+		height: 115px;
+		left: 10%;
+		top: 4%;
+	}
+	a.grid-col-content{
+		left: 10%;
+		width: 158px;
+	}
+}
+
+@media screen and (max-width: 850px){
+	.row{
+		width: 833px;
+	}
+	.main{
+		width: 833px;
+	}
+
+	.grid-col{
+		display: block;
+		clear: both;
+	}
+	.grid-col img{
+		width: 521px;
+		height: 391px;
+
+	}
+	a.layer-hover{
+		width: 510px;
+		height: 380px;
+		left: 10%;
+		top: 1%;
+	}
+	a.grid-col-content{
+		width: 510px;
+	}
+
+}
+
+@media screen and (max-width: 769px){
+	.row{
+		width: 751px;
+	}
+	.main{
+		width: 751px;
+	}
+	.grid-col{
+		display: block;
+		clear: both;
+		text-align: center;
+	}
+	.grid-col img{
+		width: 521px;
+		height: 391px;
+	}
+	a.layer-hover{
+		width: 509px;
+		height: 379px;
+		left: 21px;
+		top: 6px;
+	}
+	a.grid-col-content{
+		width: 500px;
+		left: 16%;
+	}
+}
+@media screen and (max-width: 768px){
+	.row{
+		width: 744px;
+	}
+	.main{
+		width: 744px;
+	}
+	.grid-col{
+		display: block;
+		clear: both;
+		text-align: center;
+	}
+	.grid-col img{
+		width: 521px;
+		height: 391px;
+	}
+	a.layer-hover{
+		width: 509px;
+		height: 379px;
+		left: 103px;
+		top: 6px;
+	}
+	a.grid-col-content{
+		width: 500px;
+		left: 16%;
+	}
+}
+@media screen and (max-width: 576px){
+	.row{
+		width: 558px;
+	}
+	.main{
+		width: 558px;
+	}
+
+	.grid-col{
+		display: block;
+		clear: both;
+		text-align: center;
+		margin-left: 0px;
+	}
+	.grid-col img{
+		width: 484px;
+		height: 363px;
+	}
+	a.layer-hover{
+		width: 472px;
+		height: 351px;
+		left: 28px;
+		top: 6px;
+	}
+	a.grid-col-content{
+		width: 381px;
+		left: 14%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.row{
+		width: 450px;
+	}
+	.main{
+		width: 450px;
+	}
+	.main-right p{
+		font-size: 16px !important;
+	}
+	.grid-col{
+		display: block;
+		clear: both;
+		text-align: center;
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+	.grid-col img{
+		width: 425px;
+		height: 319px;
+	}
+	a.layer-hover{
+		width: 413px;
+		height: 307px;
+		left: 6px;
+		top: 6px;
+	}
+	a.grid-col-content{
+		width: 314px;
+		left: 14%;
+	}
+}
+
+@media screen and (max-width: 425px){
+	.row{
+		width: 425px;
+	}
+	.main{
+		width: 425px;
+	}
+	.grid-col{
+		display: block;
+		clear: both;
+		text-align: center;
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+	.grid-col img{
+		width: 383px;
+		height: 287px;
+	}
+	a.layer-hover{
+		width: 372px;
+		height: 379px;
+		left: 6px;
+		top: 6px;
+	}
+	a.grid-col-content{
+		width: 314px;
+		left: 9%;
+	}
+}
+
+@media screen and (max-width: 375px){
+	.row{
+		width: 375px;
+	}
+	.main{
+		width: 375px;
+	}
+	.grid-col{
+		display: block;
+		clear: both;
+		text-align: center;
+		width: 400px;
+		height: 215px;
+		margin-top: 100px;
+	}
+	.grid-col img{
+		width: 333px;
+		height: 250px;
+	}
+	a.layer-hover{
+		width: 373px;
+		height: 215px;
+		left: 6px;
+		top: 6px;
+	}
+	a.grid-col-content{
+		width: 273px;
+		left: 14%;
+		color: #ffffff;
+		display: block;
+		font-size: 15px !important;
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+		bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 350px){
+	.row{
+		width: 350px;
+	}
+	.main{
+		width: 350px;
+	}
+	.grid-col{
+		display: block;
+		clear: both;
+		text-align: center;
+		width: 400px;
+		height: 215px;
+		margin-top: 100px;
+	}
+	.grid-col img{
+		width: 333px;
+		height: 250px;
+	}
+	a.layer-hover{
+		width: 321px;
+		height: 215px;
+		left: 33px;
+		top: 6px;
+	}
+	a.grid-col-content{
+		width: 273px;
+		left: 14%;
+		color: #ffffff;
+		display: block;
+		font-size: 15px !important;
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+		top: 83%;
+	}
+}
+
+@media screen and (max-width: 325px){
+	.row{
+		width: 325px;
+	}
+	.main{
+		width: 325px;
+	}
+	.grid-col{
+		display: block;
+		clear: both;
+		text-align: center;
+		width: 400px;
+		height: 215px;
+		margin-top: 100px;
+	}
+	.grid-col img{
+		width: 333px;
+		height: 250px;
+	}
+	a.layer-hover{
+		width: 322px;
+		height: 215px;
+		left: 32px;
+		top: 6px;
+	}
+	a.grid-col-content{
+		width: 314px;
+		left: 9%;
+		color: #ffffff;
+		display: block;
+		font-size: 15px !important;
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold !important;
+		top: 75%;
+	}
+
+}
