@@ -1,6 +1,10 @@
 .banner {
     position: relative;
 }
+.banner .item img {
+    max-height: 500px !important;
+    max-width: 100%;
+}
 .banner .owl-nav {
     font-size: 50px;
     position: relative;
