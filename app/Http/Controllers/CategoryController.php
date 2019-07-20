@@ -11,6 +11,7 @@ use Gate;
 class CategoryController extends Controller
 {
     public function index(){
+        return view('admin.pages.examples.500');
         $categories = DB::table('cate_event')->get();
         $sub_categories_event = DB::table('cate_event')->join('sub_cate_event', 'cate_event.id', '=', 'sub_cate_event.cate_id')->where('cate_event.type_cate','=',1)->get();
         $sub_categories_staff = DB::table('cate_event')->join('sub_cate_event', 'cate_event.id', '=', 'sub_cate_event.cate_id')->where('cate_event.type_cate','=',2)->get();

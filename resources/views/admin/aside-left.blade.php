@@ -87,7 +87,7 @@
         </ul>
     </li>
     <li>
-        <a href="{!!route('addCategory')!!}">
+        <a href="{!!route('category')!!}">
         <i class="fa fa-edit"></i> <span>Thêm thể loại</span>
         </a>
     </li>
