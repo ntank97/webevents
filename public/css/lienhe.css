@@ -514,17 +514,18 @@ ul.dropdown-menu.show li {
 	z-index: 999;
 }
 .back-to-top-button {
-	background: #FFFFFF;
-	color: #111;
+	background:#c92127;
+	color: #fff;
 	font-size: 20px;
 	padding: 3px 10px;
 	cursor: pointer;
 	transition: 0.3s all;
 	border: 1px solid #ccc;
-	border-radius: 100%;
+	/* border-radius: 100%; */
 }
 .back-to-top-button:hover {
-	background: #c92127;
+    background: #fff;
+    color: #000;
 }
 .back-to-top-button i:hover {
 	color: #FFFFFF;
