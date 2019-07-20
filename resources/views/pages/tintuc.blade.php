@@ -27,9 +27,10 @@
                 </div>
 
             <div class="row">
-                
-                <div class="paginated">
-                        {!! $blogss->links() !!}
+                <div style="text-align: center;margin-top: 30px;">
+                    <div class="paginated" style="display:inline-block">
+                            {!! $blogss->links() !!}
+                    </div>
                 </div>
             </div>
         </div>

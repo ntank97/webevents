@@ -68,7 +68,7 @@ class DatabaseSeeder extends Seeder
             ]
         );
         //create events
-        for ($i=0; $i < 12; $i++) { 
+        for ($i=0; $i < 30; $i++) { 
             DB::table('events')->insert([
                 'photo_cover' => 'hot2.jpg',
                 'title' => 'TỔ CHỨC HỘI NGHỊ KHÁCH HÀNG',
@@ -109,7 +109,7 @@ class DatabaseSeeder extends Seeder
                 ]
             );
         }
-        for ($i=24; $i < 35; $i++) { 
+        for ($i=24; $i < 55; $i++) { 
             DB::table('events')->insert([
                 'photo_cover' => 'chitietsukien3.jpg',
                 'title' => 'Cho thuê sân khấu tổ chức sự kiện',

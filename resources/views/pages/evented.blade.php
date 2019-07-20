@@ -80,11 +80,14 @@
                             </div> <!-- hết grid-col -->
                             @endforeach
                         </div> <!-- hết main-right -->
+                        <div style="text-align:center;margin-top:30px;">
+                            <div class="paginated" style="display:inline-block;">
+                                    {!! $eventstc->links() !!}
+                            </div>
+                         </div>
                 </div>
             </div> <!--  finish rightcont-->
-            <div class="paginated">
-                    {!! $eventstc->links() !!}
-            </div>
+            
         </div>
     </div>
 </div>

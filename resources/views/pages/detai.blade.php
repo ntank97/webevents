@@ -116,6 +116,7 @@
                     <div class="fb-comments" data-href="{{ url("/detail/$dataDetail->slug") }}" data-numposts="5"></div>
                 </div>
             </div> <!--  finish rightcont-->
+            
         </div>
     </div>
 </div>
