@@ -67,13 +67,13 @@ nav.nav-horizontal{
 	z-index: 99;
 	width: 100%;
 }
-.nav-horizontal-content ul.nav-ul-lv-1{
+.nav-horizontal-content    ul.nav-ul-lv-1{
 	margin-bottom: 0;
 	float: left;
 	line-height: 60px;
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
+    width: 100%;
 }
 .nav-horizontal-content ul.nav-ul-lv-1>li{
 	display: inline-block;
@@ -239,8 +239,9 @@ nav.nav-horizontal-active-3{
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
-.nav-horizontal-content-active{
-	top: 0px;
+.nav-horizontal-content-active ul.nav-ul-lv-1{
+    position: relative;
+    bottom: 5px;    
 }
 section.banner-slider-active{
 	margin-top: 120px;
