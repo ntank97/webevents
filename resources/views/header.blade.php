@@ -10,13 +10,13 @@
             <ul class="nav-ul-lv-1">
                 <li><a href="{{ url('') }}">Trang chủ</a></li>
                 <li class="sanpham" style="position : unset">
-                    <a href="{!!route('interface-intro')!!}">Giới thiệu</a>
+                    <i class="fas fa-arrows-alt"></i><a href="{!!route('interface-intro')!!}">Giới thiệu</a>
                 </li>
                 <li class="menu-lv-1">
-                    <a href="">Dịch vụ</a>
+                    <i class="far fa-lightbulb"></i><a href="">Dịch vụ</a><i class="fas fa-chevron-down ml-1"></i>
                     <ul class="nav-ul-lv-2">
                         <li>
-                            <a href="">Sự kiện</a>
+                            <a href="{{ url('sukien') }}">Sự kiện</a>
                             <ul class="nav-ul-lv-3">
                                 <li><a href="#">Trang tổng quan</a></li>
                                 <li><a href="#">Trang tổng quan</a></li>
@@ -26,8 +26,8 @@
                         <li>
                             <a href="">Tổ chức</a>
                             <ul class="nav-ul-lv-3">
-                                 <li><a href="#">Trang tổng quan</a></li>
-                                 <li><a href="#">Trang tổng quan</a></li>
+                                <li><a href="#">Trang tổng quan</a></li>
+                                <li><a href="#">Trang tổng quan</a></li>
                             </ul>
                         </li>
                         <li>
@@ -45,7 +45,7 @@
                                 <li><a href="#">Các mẫu dụng cụ</a></li>
 
                             </ul>
-                          </li>
+                        </li>
                     </ul>
                 </li>
 
@@ -55,7 +55,8 @@
 
                 </li>
 
-                <li class="lienhe-led"><a href="{!!route('interface-contact')!!}">liên hệ
+                <li class="lienhe-led" style="border-right : none;"><i class="far fa-comments"></i><a
+                        href="{!!route('interface-contact')!!}">liên hệ
                     </a></li>
             </ul>
             <div class="menu-mobile-button">
