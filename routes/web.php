@@ -11,6 +11,9 @@
 |
 */
 
+Route::get('/chitiet', function() {
+	return view('pages.chitietpage');
+});
 Route::any('/ckfinder/examples/{example?}', 'CKSource\CKFinderBridge\Controller\CKFinderController@examplesAction')
     ->name('ckfinder_browser');
 //admin
@@ -72,7 +75,7 @@ Route::group(['prefix'=>'admincp'],function(){
 	Route::post('custommer-delete-data','CustommerController@deleteData')->name('custommer-delete-data');//interface
 	Route::post('admin-change-custommer-status','CustommerController@changeStatusData')->name('admin-change-custommer-status');//interface
 	//add category
-	
+
 	Route::get('category','CategoryController@index')->name('category');//interface
 	Route::get('add-category','CategoryController@addCategory')->name('addCategory');//interface
 	Route::post('add-category-data','CategoryController@addCategoryData')->name('addCategoryData');//add
@@ -93,7 +96,7 @@ Route::group(['prefix'=>''],function(){
 	Route::get('news','Interfaces\IndexController@news')->name('interface-news');
 	Route::get('team','Interfaces\IndexController@team')->name('interface-team');
 	Route::get('contact','Interfaces\IndexController@contact')->name('interface-contact');
-	
+
 	//detail
 	Route::get('detail','Interfaces\IndexController@detail')->name('interface-page-detail');
 	// Route::get('detail-personnel','Interfaces\IndexController@detailPersonnel')->name('interface-page-detail-personnel');

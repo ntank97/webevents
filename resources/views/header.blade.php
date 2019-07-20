@@ -103,7 +103,7 @@
     <div class="banner owl-carousel owl-theme">
         @foreach ($slider as $slide)
         <div class="item">
-            <img style="max-width: 100%;object-fit: contain;height:100%"
+            <img style="max-width: 100%;object-fit: cover;height:100%"
                 src="{!! asset('admin/img/'.$slide->thumbnail) !!}" alt="">
         </div>
         @endforeach
