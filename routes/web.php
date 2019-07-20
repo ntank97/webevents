@@ -71,6 +71,15 @@ Route::group(['prefix'=>'admincp'],function(){
 	Route::post('custommer-edit-data','CustommerController@editData')->name('custommer-edit-data');//interface
 	Route::post('custommer-delete-data','CustommerController@deleteData')->name('custommer-delete-data');//interface
 	Route::post('admin-change-custommer-status','CustommerController@changeStatusData')->name('admin-change-custommer-status');//interface
+	//add category
+	
+	Route::get('category','CategoryController@index')->name('category');//interface
+	Route::get('add-category','CategoryController@addCategory')->name('addCategory');//interface
+	Route::post('add-category-data','CategoryController@addCategoryData')->name('addCategoryData');//add
+	Route::post('delete-category-data','CategoryController@deleteCategoryData')->name('deleteCategoryData');//delete
+	Route::post('delete-category-sub-data','CategoryController@deleteCategorySubData')->name('deleteCategorySubData');//delete sub cate
+	Route::post('get-sub-cate-for-add-event','CategoryController@getDataSubCate')->name('get-sub-cate-for-add-event');//delete sub cate
+
 });
 //interface
 

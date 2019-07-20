@@ -48,12 +48,22 @@ class DatabaseSeeder extends Seeder
             'created_at'=> now()
             ]
         );
-        //images
-        DB::table('users')->insert([
-            'name' => 'user2',
-            'avatar' => 'dt1.jpg',
-            'password' => bcrypt('123456'),
-            'level'=>3,
+        //cate
+        DB::table('cate_event')->insert([
+            'name_cate' => 'cate demmo1',
+            'type_cate' => 1,
+            'created_at'=> now()
+            ]
+        );
+        DB::table('cate_event')->insert([
+            'name_cate' => 'cate demmo2',
+            'type_cate' => 2,
+            'created_at'=> now()
+            ]
+        );
+        DB::table('cate_event')->insert([
+            'name_cate' => 'cate demmo3',
+            'type_Cate' => 3,
             'created_at'=> now()
             ]
         );
@@ -74,6 +84,7 @@ class DatabaseSeeder extends Seeder
                 'status'=> 1,
                 'start_day'=> '2019-06-19 00:00:00',
                 'end_day'=> '2019-07-18 00:00:00',
+                'cate' => 1,
                 'created_at'=> now()
                 ]
             );
@@ -93,6 +104,7 @@ class DatabaseSeeder extends Seeder
                 'status'=> 1,
                 'start_day'=> '2019-06-19 00:00:00',
                 'end_day'=> '2019-07-18 00:00:00',
+                'cate' => 2,
                 'created_at'=> now()
                 ]
             );
@@ -113,6 +125,7 @@ class DatabaseSeeder extends Seeder
                 'status'=> 1,
                 'start_day'=> '2019-06-19 00:00:00',
                 'end_day'=> '2019-07-18 00:00:00',
+                'cate' => 3,
                 'created_at'=> now()
                 ]
             );
@@ -153,7 +166,7 @@ class DatabaseSeeder extends Seeder
         //blog
         for ($i=0; $i < 12; $i++) { 
             DB::table('blog')->insert([
-                'photo_cover' => 'tcsk1.png',
+                'photo_cover' => 'tcsk1.jpg',
                 'slug' => 'LỄ-KHAI-TRƯƠNG-CỬA-HÀN'.$i,
                 'title' => 'LỄ KHAI TRƯƠNG CỬA HÀN',
                 'content' => 'Công ty Tổ Chức Sự Kiện Tuấn Việt được thành lập năm 2009. Đến nay Tuấn Việt là một doanh nghiệp hàng đầu trong lĩnh vực phục vụ Tổ Chức Sự Kiện & Cung Cấp Thiết Bị Sự Kiện.
@@ -170,7 +183,7 @@ class DatabaseSeeder extends Seeder
         for ($i=0; $i < 4; $i++) { 
             DB::table('custommer')->insert([
                 'slug' => 'Mr-Phan-Văn-Hoàng'.$i,
-                'avatar' => 'member.png',
+                'avatar' => 'member.jpg',
                 'name' => 'Mr Phan Văn Hoàng ',
                 'comment' => 'Là đơn vị chuyên trách về xây dựng các nhà máy nước ngoài đặt tại Việt Nam, chúng tôi thật sự yên tâm khi lựa chọn Tuấn Việt Event là đối tác tổ chức sự kiện cho các chương trình của khách hàng. Tuấn Việt Event giúp cho tôi tiết kiệm được thời gian chuẩn bị. Cảm ơn sự kiện Tuấn Việt…',
                 'work' => 'Marketing manager – Giza Việt Nam',
@@ -183,6 +196,25 @@ class DatabaseSeeder extends Seeder
         DB::table('images')->insert([
             'thumbnail' => 'logo.png',
             'type' => 3,
+            'created_at'=> now()
+            ]
+        );
+         //imgaes
+        DB::table('images')->insert([
+            'thumbnail' => 'slide1.jpg',
+            'type' => 1,
+            'created_at'=> now()
+            ]
+        );
+        DB::table('images')->insert([
+            'thumbnail' => 'slide2.jpg',
+            'type' => 1,
+            'created_at'=> now()
+            ]
+        );
+        DB::table('images')->insert([
+            'thumbnail' => 'slide3.jpg',
+            'type' => 1,
             'created_at'=> now()
             ]
         );

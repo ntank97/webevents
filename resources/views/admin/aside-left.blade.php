@@ -87,6 +87,11 @@
         </ul>
     </li>
     <li>
+        <a href="{!!route('category')!!}">
+        <i class="fa fa-edit"></i> <span>Thêm thể loại</span>
+        </a>
+    </li>
+    <li>
         <a href="{!!route('blogs')!!}">
         <i class="fa fa-edit"></i> <span>Blogs</span>
         <span class="pull-right-container" style="font-size: 12px;">
