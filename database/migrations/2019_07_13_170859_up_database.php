@@ -20,7 +20,13 @@ class UpDatabase extends Migration
             $table->integer('type'); //1-anh for slide; 2- images for loo; 3- image for viedo intro
             $table->timestamps();
         });
-
+        //cate event
+        Schema::create('cate_event', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('name_cate');
+            $table->integer('type_cate');
+            $table->timestamps();
+        });
         //events
         Schema::create('events', function (Blueprint $table) {
             $table->bigIncrements('id');
@@ -37,6 +43,8 @@ class UpDatabase extends Migration
                 ->foreign('user_id')
                 ->references('id')
                 ->on('users');
+            $table->bigInteger('cate')->unsigned();
+            $table->foreign('cate')->references('id')->on('cate_event');
             $table->timestamps();
         });
         //intro
@@ -96,6 +104,18 @@ class UpDatabase extends Migration
             $table->integer('status');
             $table->timestamps();
         });
+        
+        //sub cate event
+        Schema::create('sub_cate_event', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('name_sub_cate');
+            $table->bigInteger('cate_id')->unsigned();
+            $table->foreign('cate_id')
+                ->references('id')
+                ->on('cate_event');
+            $table->timestamps();
+        });
+
     }
 
     /**

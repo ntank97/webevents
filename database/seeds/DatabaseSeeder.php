@@ -48,12 +48,22 @@ class DatabaseSeeder extends Seeder
             'created_at'=> now()
             ]
         );
-        //images
-        DB::table('users')->insert([
-            'name' => 'user2',
-            'avatar' => 'dt1.jpg',
-            'password' => bcrypt('123456'),
-            'level'=>3,
+        //cate
+        DB::table('cate_event')->insert([
+            'name_cate' => 'cate demmo1',
+            'type_cate' => 1,
+            'created_at'=> now()
+            ]
+        );
+        DB::table('cate_event')->insert([
+            'name_cate' => 'cate demmo2',
+            'type_cate' => 2,
+            'created_at'=> now()
+            ]
+        );
+        DB::table('cate_event')->insert([
+            'name_cate' => 'cate demmo3',
+            'type_Cate' => 3,
             'created_at'=> now()
             ]
         );
@@ -74,6 +84,7 @@ class DatabaseSeeder extends Seeder
                 'status'=> 1,
                 'start_day'=> '2019-06-19 00:00:00',
                 'end_day'=> '2019-07-18 00:00:00',
+                'cate' => 1,
                 'created_at'=> now()
                 ]
             );
@@ -93,6 +104,7 @@ class DatabaseSeeder extends Seeder
                 'status'=> 1,
                 'start_day'=> '2019-06-19 00:00:00',
                 'end_day'=> '2019-07-18 00:00:00',
+                'cate' => 2,
                 'created_at'=> now()
                 ]
             );
@@ -113,6 +125,7 @@ class DatabaseSeeder extends Seeder
                 'status'=> 1,
                 'start_day'=> '2019-06-19 00:00:00',
                 'end_day'=> '2019-07-18 00:00:00',
+                'cate' => 3,
                 'created_at'=> now()
                 ]
             );

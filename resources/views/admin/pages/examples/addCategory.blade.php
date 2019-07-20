@@ -67,7 +67,7 @@
         @endif
       </div>
       <div class="box-body">
-        <form action="manager-add-data" method="POST" enctype="multipart/form-data">
+        <form action="add-category-data" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="_token" value="{{csrf_token()}}">
         <input type="hidden" name="user_id" value="{!! \Auth::user()->id !!}">
         <input type="hidden" name="type" value="{{Request::get('type')}}">
@@ -79,75 +79,31 @@
                 </div>
                 <div class="box-body">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Tiêu đề</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="tiêu đề bài viết" name="title">
+                    <label for="exampleInputEmail1">Tên thể loại</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="tên thể loại" name="name">
                   </div>
                   <div class="form-group">
-                    <label>Nội dung</label>
-                    <textarea class="form-control" rows="3" placeholder="Enter ..." id="editor1" name="content"></textarea>
-                    <script>
-                      CKEDITOR.replace( 'editor1', {
-                        filebrowserBrowseUrl: '{{ asset('admin/ckfinder/ckfinder.html') }}',
-                        filebrowserImageBrowseUrl: '{{ asset('admin/ckfinder/ckfinder.html?type=Images') }}',
-                        filebrowserFlashBrowseUrl: '{{ asset('admin/ckfinder/ckfinder.html?type=Flash') }}',
-                        filebrowserUploadUrl: '{{ asset('admin/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                        filebrowserImageUploadUrl: '{{ asset('admin/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                        filebrowserFlashUploadUrl: '{{ asset('admin/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
-                    } );
-                    </script>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Chọn thể loại cho sựu kiện:</label>
-                    <select id="getValueCate" onchange="myCategory()" style="height: 26px;
+                    <label for="exampleInputEmail1">Chọn kiểu cho thể loại:</label>
+                    <select style="height: 26px;
                     border-radius: 5px;
                     background: #043663;
                     color: white;
                     border: 1px solid #043663;
                     outline: none;" name="category">
                         <option value="0">--Chọn--</option>
-                        @foreach($category as $cate)
-                        <option value="{{$cate->id}}">{{$cate->name_cate}}</option>
-                        @endforeach
+                        <option value="1">Tổ chức sự kiện</option>
+                        <option value="2">Nhân sự sự kiện</option>
+                        <option value="3">Thiết bị sự kiện</option>
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Chọn thể loại cho sựu kiện:</label>
-                    <select id="sub_category" style="height: 26px;
-                    border-radius: 5px;
-                    background: #043663;
-                    color: white;
-                    border: 1px solid #043663;
-                    outline: none;" name="sub_category">
-                        <option value="0">--Chọn--</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label>Ngày bắt đầu sự kiện(<small>Không bắt buộc</small>)</label>
-                    <div class="input-group">
-                      <div class="input-group-addon">
-                        <i class="fa fa-calendar"></i>
-                      </div>
-                      <input name="start_time" type="date" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
-                    </div>
-                  </div>
-    
-                  <div class="form-group">
-                    <label>Ngày kết thúc sự kiện(<small>Không bắt buộc</small>)</label>
-                    <div class="input-group">
-                      <div class="input-group-addon">
-                        <i class="fa fa-calendar"></i>
-                      </div>
-                      <input name="end_time" type="date" class="form-control" data-inputmask="'alias': 'mm/dd/yyyy'" data-mask>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputFile">Ảnh nền</label>
-                    <input type="file" id="exampleInputFile" name="img_cover">
-                    <p class="help-block">Chọn ảnh nền cho sự kiên ở đây.</p>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Đăng bởi</label>
-                    <input name="author" type="text" class="form-control" id="exampleInputEmail1" placeholder="post user" disabled value="{{Request::get('post-user')}}">
+                        <label for="exampleInputEmail1">Bạn có muốn thêm thể loại con cho thể loại này không?</label>
+                        <span id="add_category" style="padding: 5px 10px;
+                        background: #d01dc1;
+                        border-radius: 5px;
+                        color: white;
+                        cursor: pointer;">add</span>
+                        <div id="insertCategory" style="margin-top:10px;"></div>
                   </div>
     
                 </div>
@@ -171,6 +127,6 @@
   </section>
   <!-- /.content -->
 </div>
-<script src="{{asset('admin/js/addEvent.js')}}"></script>
+<script src="{{asset('')}}/admin/js/category.js"></script>
 @endsection
 

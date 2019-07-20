@@ -16,8 +16,8 @@ use Gate;
 class ActionController extends Controller
 {
     public function addView(){
-        
-        return view('admin.pages.examples.add');
+        $category = DB::table('cate_event')->get();
+        return view('admin.pages.examples.add',['category'=>$category]);
     }
     public function add(Request $request){
         if($request->_token == csrf_token()){
